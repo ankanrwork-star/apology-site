@@ -1,20 +1,24 @@
 {
   "name": "apology-site",
+  "homepage": "https://ankanrwork-star.github.io/apology-site",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^10.12.16",
     "react": "^18.2.0",
-    "react-confetti": "^7.0.3",
+  "react-confetti": "^6.4.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "vite": "^4.4.9",
-    "@vitejs/plugin-react": "^3.2.0"
+    "gh-pages": "^5.0.0",
+    "@vitejs/plugin-react": "^4.4.1"
   }
 }
